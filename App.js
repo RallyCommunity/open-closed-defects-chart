@@ -4,7 +4,7 @@ Ext.define('CustomApp', {
     launch: function() {
         var that = this;
         var minDate = new Date(new Date() - 86400000*90); //milliseconds in day = 86400000
-        that._datePicker = Ext.create('Ext.panel.Panel', {
+        var datePicker = Ext.create('Ext.panel.Panel', {
             title: 'Choose a date:',
             width: 200,
             bodyPadding: 10,
@@ -17,7 +17,7 @@ Ext.define('CustomApp', {
                 }
             }]
         });        
-        this.add(that._datePicker);
+        this.add(datePicker);
     },
     onDateSelected:function(date){
         this._date = date;
@@ -102,7 +102,7 @@ Ext.define('CustomApp', {
      chartConfig: {
         xtype: 'rallychart',
         itemId : 'myChart',
-        chartColors: ['Green', 'Red'],
+        chartColors: ['Red', 'Green'],
         
         storeConfig: { },
         calculatorType: 'MyDefectCalculator',
@@ -127,7 +127,7 @@ Ext.define('CustomApp', {
                 },
                 title: {
                     text: 'Date'
-                },
+                }
             },
             yAxis: [
                 {
