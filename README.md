@@ -3,9 +3,11 @@ Open/Closed Defects Chart
 
 ## Overview
 
+This is an examle of using Rally.data.lookback.calculator.TimeSeriesCalculator.
+
 ![](pic.png)
 
-Short video showing the chart refreshing on another date selection from the date picker is [here.](http://screencast.com/t/gCmfVRTytNu)
+Short video showing the chart reloading on another date selection from the date picker is [here.](http://screencast.com/t/gCmfVRTytNu)
 
 
 This app is available AS IS. It is not supported by Rally support.
