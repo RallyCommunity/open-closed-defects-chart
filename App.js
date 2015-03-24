@@ -1,3 +1,10 @@
+//optional: set timeout for lbapi queries
+Ext.define('Rally.data.lookback.SnapshotRestProxyOverride', {
+override: 'Rally.data.lookback.SnapshotRestProxy',
+timeout: 300000
+});
+//end of set timeout
+
 Ext.define('CustomApp', {
     extend: 'Rally.app.App',
     componentCls: 'app',
